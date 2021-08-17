@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Top Furniture"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvName"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Android Developer"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:adSize="BANNER"
+            android:layout_gravity="center"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                android:id="@+id/card_about"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivabout"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="10dp"
+                        android:src="@drawable/tables" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivabout"
+                        android:gravity="center"
+                        android:text="Tables"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                android:id="@+id/card_causes"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivCauses"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="10dp"
+                        android:src="@drawable/chairs" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivCauses"
+                        android:gravity="center"
+                        android:text="Chairs"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+        </LinearLayout>
+        <!--slider-->
+        <com.ouattararomuald.slider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            />
+
+
+        <!--slider-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/card_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivsymptoms"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="10dp"
+                        android:src="@drawable/beds" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivsymptoms"
+                        android:gravity="center"
+                        android:text="Beds"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/card_prevention"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivPrevention"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ladders" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivPrevention"
+                        android:gravity="center"
+                        android:text="Ladders "
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                android:id="@+id/card_tollfree"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivtoll"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="10dp"
+                        android:src="@drawable/closets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivtoll"
+                        android:gravity="center"
+                        android:text="Closets"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+                android:id="@+id/card_location"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                app:cardPreventCornerOverlap="true"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:padding="10dp"
+                        android:src="@drawable/sofas"/>
+" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivlocation"
+                        android:gravity="center"
+                        android:text="sofas "
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
